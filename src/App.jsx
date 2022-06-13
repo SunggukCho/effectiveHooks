@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import UseTabs from './routes/UseTabs';
 import UseInput from './routes/UseInput';
+import UseTitle from './routes/UseTitle';
 
 function App() {
   
@@ -23,6 +24,9 @@ function App() {
             <li>
               <Link to="/useInput">UseInput</Link>
             </li>
+            <li>
+              <Link to="/useTitle">UseTitle</Link>
+            </li>
           </ul>
         </nav>
 
@@ -32,6 +36,7 @@ function App() {
           <Route path="/" />
           <Route path="/useTabs" element={ <UseTabs />} />
           <Route path="/useInput" element={ <UseInput /> } />
+          <Route path="/useTitle" element={ <UseTitle /> } />
         </Routes>
       </div>
     </Router>

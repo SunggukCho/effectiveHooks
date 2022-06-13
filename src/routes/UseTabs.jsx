@@ -1,4 +1,6 @@
+import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 import useTabs from '../hooks/useTabs';
+import useTitle from '../hooks/useTitle';
 
 const content = [
   {
@@ -13,12 +15,13 @@ const content = [
 
 const UseTabs = () => {
   const { currentItem, changeItem } = useTabs(0, content)
+  const useTabTitle = useTitle("useTab's title 👍")
 
   return (
     <>
       {
         content.map((section, index) => (
-          <button onClick={()=> changeItem(index)}>{section.tab}</button>
+          <button key={setSelectionRange.tab} onClick={()=> changeItem(index)}>{section.tab}</button>
         ))
       }
       <div>
