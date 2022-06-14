@@ -7,6 +7,7 @@ import {
 import UseTabs from './routes/UseTabs';
 import UseInput from './routes/UseInput';
 import UseTitle from './routes/UseTitle';
+import UseConfirm from './routes/UseConfirm';
 
 function App() {
   
@@ -27,6 +28,9 @@ function App() {
             <li>
               <Link to="/useTitle">UseTitle</Link>
             </li>
+            <li>
+              <Link to="/useConfirm">UseConfirm</Link>
+            </li>
           </ul>
         </nav>
 
@@ -37,6 +41,7 @@ function App() {
           <Route path="/useTabs" element={ <UseTabs />} />
           <Route path="/useInput" element={ <UseInput /> } />
           <Route path="/useTitle" element={ <UseTitle /> } />
+          <Route path="/useConfirm" element={ <UseConfirm /> } />
         </Routes>
       </div>
     </Router>

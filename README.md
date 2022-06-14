@@ -6,3 +6,5 @@ Custom Hooks 를 만들 때마다 부족한 아이디어를 보완하기 위해 
 
 - useInput
 - useTabs
+- useTitle
+- useConfirm
